@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Privacy Policy — TeleAutopilot</title>
+  <style>
+    :root { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color: #243247; background: #f5f7fb; line-height: 1.65; }
+    body { margin: 0; padding: 32px 18px; }
+    main { max-width: 820px; margin: auto; background: white; padding: clamp(24px, 5vw, 56px); border-radius: 18px; box-shadow: 0 8px 36px #172b4d12; }
+    h1 { line-height: 1.2; margin: 0 0 8px; }
+    h2 { margin-top: 32px; font-size: 1.22rem; }
+    a { color: #245ac1; overflow-wrap: anywhere; }
+    .meta { color: #607086; margin-top: 0; }
+    ul { padding-left: 24px; }
+    footer { border-top: 1px solid #e3e8ef; margin-top: 36px; padding-top: 16px; color: #607086; font-size: .92rem; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy for TeleAutopilot</h1>
+  <p class="meta">Effective date: November 11, 2026</p>
+  <p>This Privacy Policy explains how the TeleAutopilot Android application ("TeleAutopilot", "the app") handles information when you connect Telegram and supported cloud storage services, manage media, and schedule content for publication.</p>
+
+  <h2>1. Information the app handles</h2>
+  <p>Depending on the features you use, TeleAutopilot may handle:</p>
+  <ul>
+    <li><strong>Telegram authentication information:</strong> your phone number, login verification code, and, when required, your two-step verification password. These are used to authenticate through Telegram's TDLib.</li>
+    <li><strong>Telegram account and channel information:</strong> account identifiers, names or usernames, chat and channel identifiers, permissions, and information retrieved through your authorized Telegram session.</li>
+    <li><strong>Telegram session data:</strong> local TDLib databases and files that can include chat and message information needed by the Telegram client.</li>
+    <li><strong>Yandex Disk connection information:</strong> an OAuth access token and related session information.</li>
+    <li><strong>Mail.ru Cloud connection information:</strong> the email address and app password you provide for WebDAV access.</li>
+    <li><strong>Personal Telegram bot information:</strong> a bot access token and the Telegram identifiers needed to send content using the Telegram Bot API, if you use this feature.</li>
+    <li><strong>Publication content and settings:</strong> scheduled dates and times, messages, captions, templates, links, channel selections, operation results, and file metadata such as names, paths, types, and sizes.</li>
+    <li><strong>Media and diagnostics:</strong> photos, videos, thumbnails, temporary media copies, and locally stored operational history or diagnostic messages.</li>
+  </ul>
+
+  <h2>2. How information is used</h2>
+  <p>The app uses this information to sign you in to connected services, display and manage authorized Telegram channels, retrieve media from sources you select, prepare and schedule posts, publish content, move processed files when you enable that workflow, remember your preferences, and show operation status or diagnostic history.</p>
+
+  <h2>3. Local storage and security</h2>
+  <p>TeleAutopilot does not operate its own backend server for storing your accounts, schedules, or media. App data is primarily stored on your Android device. This does not mean that information stays only on the device: connected services process information as described below.</p>
+  <p>Yandex Disk OAuth credentials, Mail.ru Cloud credentials, and personal Telegram bot tokens are stored locally using AES-GCM encryption with keys managed by Android Keystore. Telegram session information is maintained by TDLib in the app's private storage. Other app data, including schedules, templates, some Telegram account metadata, and temporary media, may be stored in local files without additional app-level encryption. Android's device and app security features provide further protections, but no storage or transmission method can be guaranteed completely secure.</p>
+  <p>Some local files may be eligible for Android system backup, depending on device settings and the app's backup configuration. Credential files specifically placed in Android's no-backup storage are excluded from normal Android Auto Backup.</p>
+
+  <h2>4. Information sent to external services</h2>
+  <p><strong>Telegram:</strong> authentication requests, account and channel operations, messages, captions, media, links, and bot-related requests are sent to Telegram when you use those features. Telegram's own systems process that information. Standard Telegram channel posts should not be treated as end-to-end encrypted private messages.</p>
+  <p><strong>Yandex Disk:</strong> the app uses Yandex authentication and Disk APIs to access selected cloud files, obtain previews, download media, and move files according to your actions and configured workflows.</p>
+  <p><strong>Mail.ru Cloud:</strong> the app connects to the Mail.ru WebDAV service over HTTPS using HTTP Basic authentication with the email address and app password you provide. It accesses selected cloud files and performs requested file operations.</p>
+  <p><strong>Sharing and export:</strong> if you export a publication plan or share content using Android's sharing features, information is provided to the destination you choose. TeleAutopilot cannot control copies retained by that destination.</p>
+  <p>TeleAutopilot does not currently integrate an advertising network, analytics service, or crash-reporting SDK as part of the functionality covered by this policy. Features for creating your own promotional posts or using a personal Telegram bot are not third-party advertising-network tracking.</p>
+
+  <h2>5. File access, temporary copies, and cache</h2>
+  <p>The app accesses local folders and documents that you select through Android's file selection mechanisms. Where you grant persistent folder access, the app may retain read and write permissions to support scheduled workflows. A selected Android document provider may itself be backed by a cloud service.</p>
+  <p>Media may be downloaded or copied into private temporary or staging directories before posting. The app may store previews and thumbnails in a local cache. Processed source files may be moved to a "used" folder when configured. Disconnecting a cloud account does not necessarily erase all previously prepared media, cached thumbnails, or schedule references immediately.</p>
+
+  <h2>6. Retention, disconnection, and deletion</h2>
+  <p>Information is generally retained on your device while needed for the app's features or until you remove it. Removing a Telegram connection signs out the TDLib session and removes associated local account information, schedules, and templates as implemented by the app. Disconnecting Yandex Disk removes the locally stored OAuth session; disconnecting Mail.ru Cloud removes its locally stored credentials. These actions do not delete your accounts at Telegram, Yandex, or Mail.ru, and do not necessarily revoke credentials on the service provider's servers.</p>
+  <p>Some cached media, diagnostic history, exported files, and previously prepared content may remain after an individual connection is removed. The app offers separate controls for certain saved content and history. You can also clear the app's storage or uninstall it to remove its locally stored app data, subject to Android backup/restore behavior and copies that you exported or shared. Files in your own selected folders and cloud accounts are not automatically deleted merely because you uninstall the app.</p>
+  <p>To ask a question about local data removal or privacy, contact <a href="mailto:testnorest@gmail.com">testnorest@gmail.com</a>.</p>
+
+  <h2>7. Children's privacy</h2>
+  <p>TeleAutopilot is a tool for managing Telegram channel publications and is not specifically designed for or directed to children. The app does not impose a separate 18+ age restriction. Use of Telegram, Yandex Disk, and Mail.ru Cloud is also subject to the respective services' terms and age requirements. If you believe a child has provided information inappropriately through the app, please contact us at the address below.</p>
+
+  <h2>8. Third-party policies</h2>
+  <p>Connected services have their own privacy practices and terms. Please consult the privacy policies of <a href="https://telegram.org/privacy">Telegram</a>, <a href="https://yandex.com/legal/confidential/">Yandex</a>, and <a href="https://help.mail.ru/legal/terms/common/privacy/">Mail.ru</a> for information about their processing of data. The availability and wording of third-party policies may change.</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>We may update this policy when the app's features or data practices change. The current version will be published on this page with an updated effective date.</p>
+
+  <h2>10. Contact</h2>
+  <p>For questions about this Privacy Policy or TeleAutopilot's handling of information, email <a href="mailto:testnorest@gmail.com">testnorest@gmail.com</a>.</p>
+  <footer>TeleAutopilot · Privacy Policy</footer>
+</main>
+</body>
+</html>
